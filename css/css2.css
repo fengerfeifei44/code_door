@@ -536,6 +536,12 @@ body,html{
     float: left;
     width: 30%;
 }
+#collect.record .none{
+    margin-top: 80px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+}
 #collect.record .content .rec_sym{
   float: right;
     width: 65%;
