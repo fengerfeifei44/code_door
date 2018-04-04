@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui" charset="UTF-8">
-    <title>问诊记录</title>
+    <title>智能问诊记录</title>
     <!-- UC强制全屏 -->
     <meta name="full-screen" content="yes">
     <!-- QQ强制全屏 -->
@@ -14,13 +14,29 @@
 <body  id="collect" class="record">
 <div class="title">
     <h1>
-        问诊记录
-
+        智能问诊记录
     </h1>
 </div>
 <div class="content">
     <ul class="lists">
+       <!-- <li>
+            <i class="rec_date">2015-12-01</i>
+            <span class="serial">22UBCL</span>
+            <span class="rec_sym">鼻窦疼痛或压迫感</span>
 
+        </li>
+        <li>
+            <i class="rec_date">2015-12-01</i>
+            <span class="serial">22UBCL</span>
+            <span class="rec_sym">鼻窦疼痛或压迫感</span>
+
+        </li>
+        <li>
+            <i class="rec_date">2015-12-01</i>
+            <span class="serial">22UBCL</span>
+            <span class="rec_sym">鼻窦疼痛或压迫感</span>
+
+        </li>-->
     </ul>
 
 </div>
@@ -51,6 +67,7 @@ $(function(){
                     for(var i = pageStart; i < pageEnd; i++){
                         result +=   '  <li>\
                             <i class="rec_date">'+data.lists[i].date+'</i>\
+                            <span class="serial">'+data.lists[i].code+'</span>\
                             <span class="rec_sym">'+data.lists[i].title+'</span>\
                             </li>';
                         if((i + 1) >= data.lists.length){
@@ -77,7 +94,11 @@ $(function(){
             });
         }
     });
+
 });
+$('.content').click(function () {
+    window.location.href="https://fengerfeifei44.github.io/amcCONCLUTION/"
+})
 </script>
 </body>
 </html>

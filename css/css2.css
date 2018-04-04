@@ -544,12 +544,24 @@ body,html{
 }
 #collect.record .content .rec_sym{
   float: right;
-    width: 65%;
+    width: 50%;
 
     text-overflow : ellipsis;
     white-space : nowrap;
     overflow : hidden;
 
+}
+#collect.record .content .serial{
+    float: right;
+    margin-top: 10px;
+    height: 24px;
+    line-height: 24px;
+    width: 20%;
+    text-align: center;
+    border: 1px solid #ececec;
+
+    border-radius: 5px;
+    font-size: 12px;
 }
 .banner{
     padding-top: 28px;
